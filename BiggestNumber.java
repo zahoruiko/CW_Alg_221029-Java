@@ -23,12 +23,11 @@ public class BiggestNumber {
             minValue = sourceArray[index];
         }
 
-        index++;
-
         if (index == sourceArray.length - 1) {
             System.out.println("Min = " + minValue);
             System.out.println("Max = " + maxValue);
         } else {
+            index++;
             getBiggestAndLowestNumberRecursive(sourceArray, index, minValue, maxValue);
         }
     }
