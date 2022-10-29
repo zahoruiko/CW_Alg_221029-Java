@@ -11,7 +11,7 @@ public class BiggestNumber {
 
     public static void getBiggestAndLowestNumberRecursive(int[] sourceArray, int index, int minValue, int maxValue) {
 
-        if (index >= sourceArray.length - 1) {
+        if (index < 0 || index > sourceArray.length - 1) {
             return;
         }
 
@@ -33,22 +33,22 @@ public class BiggestNumber {
         }
     }
 
-    public static void getBiggestAndLowestNumberIterative(int[] array) {
+    public static void getBiggestAndLowestNumberIterative(int[] sourceArray) {
 
-        int min = array[0];
-        int max = array[0];
+        int minValue = sourceArray[0];
+        int maxValue = sourceArray[0];
 
-        for (int item: array){
-            if (item > max) {
-                max = item;
+        for (int item: sourceArray){
+            if (item > maxValue) {
+                maxValue = item;
             }
-            if (item < min) {
-                min = item;
+            if (item < minValue) {
+                minValue = item;
             }
         }
 
-        System.out.println("Min = " + min);
-        System.out.println("Max = " + max);
+        System.out.println("Min = " + minValue);
+        System.out.println("Max = " + maxValue);
     }
 
 }
