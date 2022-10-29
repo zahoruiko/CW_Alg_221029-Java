@@ -1,11 +1,11 @@
 public class BiggestNumber {
     public static void main(String[] args) {
 
-
+        // Source array
         int[] arr = new int[]{40, 250, 80, 88, 240, 12, 148};
 
         getBiggestAndLowestNumberRecursive(arr, 0, arr[0], arr[0]);
-        getBiggestAndLowestNumberIterative(new int[]{40, 250, 80, 88, 240, 12, 148});
+        getBiggestAndLowestNumberIterative(arr);
     }
 
 
