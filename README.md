@@ -1,1 +1,1 @@
-# Java: Searching for the largest value in an array (iteratively and recursively)
+# Java: Search for the largest and smallest values in an array (iteratively and recursively)
